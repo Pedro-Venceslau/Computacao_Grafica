@@ -94,20 +94,20 @@ gl.useProgram(program);
 const bodyColor = [0.3, 0.3, 0.35, 1.0];
 const eyeColor = [0.2, 0.8, 0.9, 1.0];
 
-// Cabeça
-drawShape(squareBuffer, 6, gl.TRIANGLES, [0.0, 0.5], [0.2, 0.2], bodyColor);
+// Cabeça 
+drawShape(squareBuffer, 6, gl.TRIANGLES, [0.0, 0.5], [0.25, 0.25], bodyColor);
 
-// Olhos
-drawShape(circleBuffer, circleVertexCount, gl.TRIANGLE_FAN, [-0.08, 0.5], [0.04, 0.04], eyeColor);
-drawShape(circleBuffer, circleVertexCount, gl.TRIANGLE_FAN, [0.08, 0.5], [0.04, 0.04], eyeColor);
+// Olhos 
+drawShape(circleBuffer, circleVertexCount, gl.TRIANGLE_FAN, [-0.1, 0.5], [0.06, 0.06], eyeColor);
+drawShape(circleBuffer, circleVertexCount, gl.TRIANGLE_FAN, [0.1, 0.5], [0.06, 0.06], eyeColor);
 
-// Corpo
-drawShape(squareBuffer, 6, gl.TRIANGLES, [0.0, 0.1], [0.3, 0.25], bodyColor);
+// Corpo 
+drawShape(squareBuffer, 6, gl.TRIANGLES, [0.0, 0.05], [0.25, 0.25], bodyColor);
 
-// Braços
-drawShape(squareBuffer, 6, gl.TRIANGLES, [-0.4, 0.1], [0.08, 0.2], bodyColor);
-drawShape(squareBuffer, 6, gl.TRIANGLES, [0.4, 0.1], [0.08, 0.2], bodyColor);
+// Braços 
+drawShape(squareBuffer, 6, gl.TRIANGLES, [-0.35, 0.05], [0.1, 0.2], bodyColor);
+drawShape(squareBuffer, 6, gl.TRIANGLES, [0.35, 0.05], [0.1, 0.2], bodyColor);
 
-// Pernas
-drawShape(squareBuffer, 6, gl.TRIANGLES, [-0.15, -0.3], [0.08, 0.15], bodyColor);
-drawShape(squareBuffer, 6, gl.TRIANGLES, [0.15, -0.3], [0.08, 0.15], bodyColor);
+// Pernas 
+drawShape(squareBuffer, 6, gl.TRIANGLES, [-0.12, -0.3], [0.1, 0.1], bodyColor);
+drawShape(squareBuffer, 6, gl.TRIANGLES, [0.12, -0.3], [0.1, 0.1], bodyColor);
