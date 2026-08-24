@@ -49,13 +49,13 @@ const translationLocation = gl.getUniformLocation(program, "uTranslation");
 const scaleLocation = gl.getUniformLocation(program, "uScale");
 const colorLocation = gl.getUniformLocation(program, "uColor");
 
-// Quadrado unitário — usado no caule
+// Quadrado unitário 
 const squareVertices = new Float32Array([
     -1,  1,   1,  1,   1, -1,
     -1,  1,  -1, -1,   1, -1
 ]);
 
-// Círculo unitário — usado no miolo e nas pétalas
+// Círculo unitário
 function createCircleVertices(sides) {
     const vertices = [0, 0];
     for (let i = 0; i <= sides; i++) {

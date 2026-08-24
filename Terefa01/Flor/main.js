@@ -94,7 +94,7 @@ gl.useProgram(program);
 // Caule
 drawShape(squareBuffer, 6, gl.TRIANGLES, [0.0, -0.6], [0.03, 0.35], [0.1, 0.6, 0.2, 1.0]);
 
-// Círculo central (deslocado pra cima, pra sobrar espaço pro caule embaixo)
+// Círculo central
 drawShape(circleBuffer, circleVertexCount, gl.TRIANGLE_FAN, [0.0, 0.15], [0.15, 0.15], [1.0, 0.85, 0.1, 1.0]);
 
 // Círculos ao redor do central

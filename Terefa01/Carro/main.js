@@ -50,13 +50,13 @@ const translationLocation = gl.getUniformLocation(program, "uTranslation");
 const scaleLocation = gl.getUniformLocation(program, "uScale");
 const colorLocation = gl.getUniformLocation(program, "uColor");
 
-// Quadrado unitário (-1 a 1) — igual ao seu, reaproveitado pros retângulos
+// Quadrado unitário (-1 a 1) 
 const squareVertices = new Float32Array([
     -1,  1,   1,  1,   1, -1,
     -1,  1,  -1, -1,   1, -1
 ]);
 
-// Círculo unitário — leque de triângulos saindo do centro
+// Círculo unitário — triângulos saindo do centro
 function createCircleVertices(sides) {
     const vertices = [0, 0]; // centro
     for (let i = 0; i <= sides; i++) {
